@@ -26,7 +26,7 @@
             margin-bottom: 20px;
         }
 
-        #book-content {
+        .book-content {
             background-color: #eee;
             margin-top: 20px;
             padding: 20px;
@@ -34,14 +34,14 @@
             display: inline-block;
         }
 
-        #book-content img {
+        .book-content-img {
             width: 50px;
             height: 50px;
             float: left;
             margin-right: 20px;
         }
 
-        #book-content span {
+        .book-content-span {
             float: right;
         }
     </style>
@@ -57,18 +57,14 @@
         <li><a href="?book=2">Book 2</a></li>
         <li><a href="?book=3">Book 3</a></li>
     </ul>
-    <!--<div id="book-content">
-        <img src="img/book3.png"/>
-        <span><h2>book description</h2>
-        I like this book a lot.</span>
-    </div>-->
 </div>
 
 </body>
 
 <script type="text/x-handlebars-template" id="tpl">
-    <img src="{{img}}"/>
-    <span><h2>{{title}}</h2>
+    <img class="book-content-img" src="{{img}}"/>
+    <span class="book-content-span">
+        <h2>{{title}}</h2>
     {{description}}</span>
 </script>
 
